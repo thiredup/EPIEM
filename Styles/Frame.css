@@ -1,0 +1,343 @@
+/*
+This stylesheet consists of three parts:
+1. global styles: definition of the fonts, hyperlinks, lists
+2. positioning: the positioning of the boxes
+3. frame styles: the styles within the different boxes
+*/
+
+/* 1. global styles */
+
+html, body {background-color:rgb(211,211,211); margin:0; padding:0; height:100%; color: rgb(50,50,50);}
+body {font-family: "Gill Sans MT", "Gill Sans", Arial, sans-serif; font-size:75%;}
+
+p {font-size: 1.08em; margin: 0 0 1em 0; line-height: 1.3em; text-align:justify} /* std: 12px */
+h1 {font-size: 1.75em; margin: .5em 0; font-weight: bold; color: rgb(37,48,101)
+} /* std: 21px */
+h2 {font-size: 1.5em ; margin: .83em 0 0 0;; font-weight: bold;} /* std: 18px */
+h3 {font-size: 1.25em ; margin: 1em 0 0 0; font-weight: bold;} /* std: 14px */
+h4 {font-size: 1em ; margin: 1.33em 0 0 0; font-weight: bold;} /* std: 12px */
+h5 {font-size: 0.83em ; margin: 1.67em 0 -0 0; font-weight: bold;} /* std: 10px */
+h6 {font-size: 0.67em ; margin: 2.33em 0 0 0; font-weight: bold;} /* std: 8px */
+
+a {text-decoration:underline; color: rgb(50,50,50);}
+a:hover {color: rgb(37,48,101);}
+img {border:none}
+
+ul, ol {padding:0; padding-bottom:1em; margin: 1.0em 0 0 24px; line-height: 1.3em;}
+li {padding-left: 0px;}
+ul {list-style-image:url('../Images/square_blue.png'); list-style-type:none; }
+ol {list-style-image:none; list-style-type:decimal; background-image: none;}
+ul ul, ul ol, ol ul {margin-top:0; margin-bottom: 0; padding:0}
+
+/* 2. positioning */
+#header    {width:1000px; margin:0 auto;} /* little area over container, with epiem written out */
+#container {position:static; width:1000px; margin:0 auto; position:relative; min-height:95%; overflow:hidden;} /* container for the rest */
+#banner    {position:static; width:100%; height:220px; z-index:-1;} /* the banner */
+#logo      {position:absolute; top:0px; left:20px; width:430px; height:85px; z-index:1;} /* epiem logo */
+#lg      {position:absolute; top:100px; left:20px; width:158px; z-index:1;} /* local group name */
+#login     {position:absolute; top:120px; right:20px; width:187px; height:80px; z-index:1;} /* login box */
+#view      {position:absolute; top:200px; left:0px; width:220px; height:20px; z-index:0;} /* toggle corporate or normal view */
+#menu      {position:absolute; top:200px; left:220px; width:780px; height:20px; z-index:0} /* main menu, horizontal */
+#left      {position:relative; float:left; width:200px; padding-bottom:100px; z-index:0; margin-left:20px;} /* left content area */
+#main      {position:relative; float:left; margin-left:20px; width:700px; padding-bottom:100px; z-index:0} /* main content area */
+#footer    {position:absolute; bottom:0; left:25px; width:950px; height:70px; z-index:1;} /* bottom area, with partner logos */
+#logout	   {position:absolute; top:204px; right:10px; text-align:right; width:180px; height:80px; z-index:1;} /* logout button instead of login area */
+
+/* 3. frame styles */
+#header { text-align:right; padding-bottom:3px; padding-top:7px;}
+#container {background-color:rgb(255,255,255); border: 1px solid rgb(120,120,120);}
+#banner {background-color: rgba(37, 48, 101,0.6);}
+
+#lg {background: rgba(255,255,255,0.6); text-align: center; padding:5px; font-weight:bold; border:1px solid rgb(37,48,101);}
+
+#login {font-size: 15px; padding:10px; padding-right:0px; border:1px solid rgb(37,48,101); background-color:rgba(255,255,255,0.8);}
+#login form {margin:0; padding:0}
+#login input {margin-top:7px}
+#login input.text {width:150px; height:17px}
+#login .submit {clear:both; float:right; height:100px; width:15px; color: rgb(120,120,120); margin-top:-10px;}
+#login  img {clear:both; float:right; height:80px; width:15px; color: rgb(120,120,120); margin-top:-20px;}
+
+#view {color:rgb(255,255,255); text-align:center;}
+#view a {text-decoration:none; display:block; color:rgb(255,255,255); padding-bottom:2px; padding-top:1px; background: rgba(37,48,101,0.5);}
+#view a:hover {text-decoration:underline; background: rgba(37,48,101,0.6);}
+
+#menu {background-color:rgb(255,255,255)}
+#menu a {text-decoration:none}
+#menu a:hover {border-bottom:1px solid rgb(37,48,101); color: rgb(50,50,50)}
+#menu .selected {border-bottom:1px solid rgb(37,48,101);}
+#menu ul {width:550px; padding:0; margin:0; list-style-type:none; list-style-image: none;}
+#menu li {list-style-image:none; float:left; padding-top:3px; padding-bottom:2px; padding-left: 0px; margin:0; background-image:none; margin-left: 0.6em;}
+#menu li ul {display:none; width: 150px; background-color: rgb(255,255,255);}
+#menu li:hover ul, #menu li.hover ul {display: block; position: absolute; margin: 0; padding: 0; margin-top:2px }
+#menu li:hover li, #menu li.hover li {float: none;}
+#menu li li a:hover {text-decoration:underline; border:none}
+#menu li li {background-image: url('../Images/square_blue.png'); background-repeat: no-repeat; background-position: 0px 5px; padding:0px; padding-left: 14px;}
+
+#submenu ul ul {margin: 0; padding:0;}
+#submenu ul ul li {list-style-image: none; margin: 0; padding:0;}
+#submenu ul ul li a {color: rgb(120,120,120)}
+#submenu ul ul ul li {list-style-image: none; margin-left: 10px; padding:0;}
+
+#submenu a {text-decoration:none;}
+#submenu a:hover {text-decoration:underline; color: rgb(50,50,50);}
+#submenu a.selected {text-decoration:underline;}
+
+#footer {border-top:1px dotted rgb(0,0,0); padding-bottom:10px; padding-top:10px}
+#footer p {text-align:right;}
+#footer  .menu {float:left;}
+#footer .sponsors {float:right; color:rgb(150,150,150)}
+#footer img {padding-left:20px}
+
+/* event preview module */
+#event .event_preview {margin-top:15px; margin-left:-20px; background-color:rgba(37,48,101,0.3);}
+#event .event_preview a {text-decoration:none; color: rgb(37,48,101);}
+#event .event_preview a:hover {text-decoration:underline; color: rgb(37,48,101);}
+#event .event_preview .topic {float:left;margin-left:20px; color:white; padding-bottom:5px;}
+#event .event_preview .preview_filter {float:right; margin-right:20px; padding-top:16px}
+#event .event_preview .preview_filter a {text-decoration:underline; color:white;}
+#event .event_preview .preview_filter a:hover {text-decoration:none; color:rgb(37,48,101);}
+#event .event_preview .filter_highlight {font-weight:bold; color:white;}
+#event .event_preview_list {list-style: none;margin: 0;padding: 0;}
+#event .event_preview_list li {margin: 0 20px 0 20px;padding-top:5px;padding-bottom:5px;border-bottom:1px dotted white;}
+#event .collapse_buttons {margin:0px}
+#event .show_all_event_preview {top:-1px;position:relative;}
+#event .show_recent_only {display: none;top:-1px;position:relative;}
+#event .event_preview .event_widget {float:right; background-color:rgb(37,48,101); color: rgb(255,255,255); width:80px; margin-left: 0px; padding-left:10px; padding-top:5px; padding-right:0px; margin-right:0px; padding-bottom:5px}
+#event .event_preview .event_widget a {text-decoration:underline; color:white;}
+#event .event_preview .event_widget a:hover {text-decoration:none; }
+
+ul#epiemmap {list-style: none; background: url('../Images/dottedmap_blue.png') no-repeat 0 0; width: 280px; height: 288px;}
+ul#epiemmapevent {list-style: none; background: url('../Images/dottedmap_blue_aveiro.png') no-repeat 0 0; width: 280px; height: 288px;}
+ul#epiemmap li {position: absolute;}
+ul#epiemmap li a{display: block;height: 100%;text-decoration: none;}
+ul#epiemmap li a span {display: none;}
+ul#epiemmap li a:hover span {display: block;padding: 2px;width: 515px;background: #FFFFFF;position: relative;top: 20%;opacity: .80;font-size: 11px;filter:alpha(opacity=80);color: #000000;}
+ul#epiemmap li a:hover span strong {display: block;margin-bottom: 2px;	font-size: 12px;text-decoration: none;}
+
+
+#Aachen { width: 6px;height: 6px;top: 174px;left: 89px;z-index:999;z-index:999;}
+#Ankara-Bilkent { width: 6px;height: 6px;top: 253px;left: 221px;z-index:999;z-index:999;}
+#Ankara-METU { width: 6px;height: 6px;top: 248px;left: 223px;z-index:999;z-index:999;}
+#Aveiro { width: 6px;height: 6px;top: 248px;left: 6px;z-index:999;}
+#Barcelona { width: 6px;height: 6px;top: 243px;left: 54px;z-index:999;}
+#Belgrade { width: 6px;height: 6px;top: 218px;left: 160px;z-index:999;}
+#Berlin { width: 6px;height: 6px;top: 159px;left: 115px;z-index:999;}
+#Braunschweig { width: 6px;height: 6px;top: 163px;left: 106px;z-index:999;}
+#Bremen { width: 6px;height: 6px;top: 159px;left: 92px;z-index:999;}
+#Brussels { width: 6px;height: 6px;top: 178px;left: 74px;z-index:999;}
+#Bucharest { width: 6px;height: 6px;top: 218px;left: 183px;z-index:999;}
+#Budapest { width: 6px;height: 6px;top: 198px;left: 149px;z-index:999;}
+#Cambridge { width: 6px;height: 6px;top: 163px;left: 49px;z-index:999;}
+#Calabria { width: 6px;height: 6px;top: 256px;left: 136px;z-index:999;}
+#Chios { width: 6px;height: 6px;top: 258px;left: 183px;z-index:999;}
+#Coimbra { width: 6px;height: 6px;top: 255px;left: 11px;z-index:999;}
+#Darmstadt { width: 6px;height: 6px;top: 178px;left: 92px;z-index:999;}
+#Dortmund { width: 6px;height: 6px;top: 169px;left: 86px;z-index:999;}
+#Dresden { width: 6px;height: 6px;top: 174px;left: 117px;z-index:999;}
+#Eindhoven { width: 6px;height: 6px;top: 169px;left: 74px;z-index:999;}
+#Enschede { width: 6px;height: 6px;top: 163px;left: 83px;z-index:999;}
+#Famagusta { width: 6px;height: 6px;top: 277px;left: 229px;z-index:999;}
+#Gdansk { width: 6px;height: 6px;top: 149px;left: 132px;z-index:999;}
+#Gothenburg { width: 6px;height: 6px;top: 119px;left: 109px;z-index:999;}
+#Graz { width: 6px;height: 6px;top: 198px;left: 132px;z-index:999;}
+#Grenoble { width: 6px;height: 6px;top: 208px;left: 80px;z-index:999;}
+#Groningen { width: 6px;height: 6px;top: 159px;left: 80px;z-index:999;}
+#Hamburg { width: 6px;height: 6px;top: 154px;left: 100px;z-index:999;}
+#Helsinki { width: 6px;height: 6px;top: 94px;left: 169px;z-index:999;}
+#Ilmenau { width: 6px;height: 6px;top: 174px;left: 106px;z-index:999;}
+#Istanbul-Bogazici { width: 6px;height: 6px;top: 238px;left: 200px;z-index:999;}
+#Istanbul-ITU { width: 6px;height: 6px;top: 243px;left: 198px;z-index:999;}
+#Istanbul-Yildiz { width: 6px;height: 6px;top: 238px;left: 195px;z-index:999;}
+#Izmir-DEU { width: 6px;height: 6px;top: 258px;left: 189px;z-index:999;}
+#Izmir-Economy { width: 6px;height: 6px;top: 263px;left: 192px;z-index:999;}
+#Kaiserslautern { width: 6px;height: 6px;top: 183px;left: 89px;z-index:999;}
+#Karlsruhe { width: 6px;height: 6px;top: 183px;left: 95px;z-index:999;}
+#Kaunas { width: 6px;height: 6px;top: 141px;left: 168px;z-index:999;}
+#Kiev { width: 6px;height: 6px;top: 176px;left: 206px;z-index:999;}
+#Kragujevac { width: 6px;height: 6px;top: 223px;left: 163px;z-index:999;}
+#Lappeenranta { width: 6px;height: 6px;top: 89px;left: 183px;z-index:999;}
+#Linkoping { width: 6px;height: 6px;top: 114px;left: 123px;z-index:999;}
+#Lisbon { width: 6px;height: 6px;top: 258px;left: 0px;z-index:999;}
+#Lulea { width: 6px;height: 6px;top: 50px;left: 149px;z-index:999;}
+#Lund { width: 6px;height: 6px;top: 134px;left: 112px;z-index:999;}
+#Lyon { width: 6px;height: 6px;top: 208px;left: 74px;z-index:999;}
+#Madrid { width: 6px;height: 6px;top: 248px;left: 23px;z-index:999;}
+#Milan { width: 6px;height: 6px;top: 208px;left: 97px;z-index:999;}
+#Minsk { width: 6px;height: 6px;top: 152px;left: 192px;z-index:999;}
+#Moscow { width: 6px;height: 6px;top: 139px;left: 240px;z-index:999;}
+#Munich { width: 6px;height: 6px;top: 188px;left: 109px;z-index:999;}
+#NoviSad { width: 6px;height: 6px;top: 213px;left: 158px;z-index:999;}
+#Oulu { width: 6px;height: 6px;top: 60px;left: 160px;z-index:999;}
+#Paderborn { width: 6px;height: 6px;top: 169px;left: 92px;z-index:999;}
+#Porto { width: 6px;height: 6px;top: 243px;left: 3px;z-index:999;}
+#Poznan { width: 6px;height: 6px;top: 163px;left: 129px;z-index:999;}
+#Riga { width: 6px; height: 6px; top: 132px; left: 168px;z-index:999;}
+#Seville { width: 6px;height: 6px;top: 268px;left: 17px;z-index:999;}
+#Siegen { width: 6px;height: 6px;top: 174px;left: 95px;z-index:999;}
+#Skopje { width: 6px;height: 6px;top: 238px;left: 160px;z-index:999;}
+#Sofia { width: 6px;height: 6px;top: 233px;left: 169px;z-index:999;}
+#St_Petersburg { width: 6px;height: 6px;top: 99px;left: 189px;z-index:999;}
+#Stockholm { width: 6px;height: 6px;top: 104px;left: 135px;z-index:999;}
+#Tampere { width: 6px;height: 6px;top: 89px;left: 160px;z-index:999;}
+#Trondheim { width: 6px;height: 6px;top: 79px;left: 86px;z-index:999;}
+#Vaasa { width: 6px;height: 6px;top: 74px;left: 146px;z-index:999;}
+#Vilnius { width: 6px;height: 6px;top: 146px;left: 177px;z-index:999;}
+#Vienna { width: 6px;height: 6px;top: 188px;left: 132px;z-index:999;}
+#Warsaw { width: 6px;height: 6px;top: 163px;left: 152px;z-index:999;}
+#Xanthi { width: 6px;height: 6px;top: 245px;left: 183px;z-index:999;}
+#Zagreb { width: 6px;height: 6px;top: 213px;left: 135px;z-index:999;}
+#Zurich { width: 6px;height: 6px;top: 198px;left: 92px; z-index:999;}
+
+/* ### ### */
+
+.left_margin {
+    left: -85px;
+}
+
+.right_margin {
+    left: 15px;
+}</style>
+.left_margin {left: -85px;}
+.right_margin {left: 15px;}
+
+
+
+#event_list_short {background-color:rgba(37,48,101,0.5); height:100px; margin-top:15px}
+
+/* event module */
+#event .event_box {margin:15px 0px; width:400px; float:left;}
+#event .event_list {list-style: none;margin: 0;padding: 0;width: 383px;}
+#event .event_list li {margin-top:15px; margin-left:0px; margin-bottom:-20px; width:400px; font-size:1em}
+#event .event_head {border: 1px solid rgba(37,48,101,0.5); font-weight:bold; background: #ffffff; color:rgb(37,48,101); margin-top:4px; position: relative;}
+#event .event_head_deactivated {border: 1px solid rgba(37,48,101,0.5); font-weight:bold; background: #ffffff; color:rgb(120,120,120); margin-top:4px; position: relative;}
+#event .head_point_area {width:350px; padding: 10px 5px}
+#event .head_point_area_deactivated {padding: 10px 5px}
+#event .thumbnail {width:30px; height:30px; float:right; padding: 10px 0px; margin-right:3px;}
+#event .event_content {padding-left:10px; padding-right:10px; margin-bottom:0px; border-top: 1px solid rgb(255,255,255); border-bottom: 1px solid rgba(37,48,101,0.5); border-right: 1px solid rgba(37,48,101,0.5); border-left: 1px solid rgba(37,48,101,0.5); padding-bottom:10px;}
+#event .event_advisor_content {padding-left:10px; background-color: rgba(37,48,101,0.5); border: 1px solid rgba(37,48,101,0.5); height: 60px;}
+#event .event_advisor_category {float:left; padding-top: 2px; padding-bottom: 2px; width:220px;}
+#event .event_advisor_category img{padding-right:6px;}
+
+#event p {margin:0.5em 0 0.5em 0;}
+#event .span_details1 {font-size:12px;}
+#event .span_details2 {font-size:10px;color:#000000;margin-left: 0;}
+#event .span_details3 {font-size:11px; background-color:#205E44;color:#FFFFFF;margin-left: 0;text-align: center;}
+#event .span_icon {float:right; margin-right:5px; padding: 17px 0px}
+#event .dot {position:absolute; z-index:2; width:6px; height:6px;}
+#event .dot img {width:6px; height:6px; position:absolute; border:none;}
+#event .filter_map {margin:15px -40px; position:relative; float:right; width:280px; padding-bottom:70px; z-index:0;} /* right area of the event module */
+#event .filter_map h3 {clear:both; text-align:center; padding-top:10px;}
+#event .dottedmap {background-repeat:no-repeat; height:287px; margin-top:5px;}
+#event .filter .left {float:left; padding-left: 10px; margin-right:10px;}
+#event .filter .right {float:right; padding-right: 10px;}
+#event .hoverdiv {border: solid 0px; display:none; background-color:white; position:absolute; left:0px; top:0px; z-index:3; padding:3px; margin-left:12px; margin-top:12px; opacity: 0.85}
+#event .boxing_left {float:left; width:400px;}
+#event .event_description ul, #event .event_description ol {font-size:1.08em}
+#event .event_description li {margin-bottom:-13px; width:350px}
+#event .event_description ul ul, #event .event_description ol ol, #event .event_description ul ol, #event .event_description ol ul {margin-top:-13px; font-size: 1em}
+#event .event_description ul ul li, #event .event_description ol ol li, #event .event_description ul ol li, #event .event_description ol ul li {margin-bottom:-15px; width:390px}
+
+/* NEW IT-COM HELSINKI*/
+#event .box {background-color: rgb(37,48,101); color: #ffffff; padding-left:10px; padding-right:10px; font-size:12px}
+#event .box_table {width:100%;}
+#event .box_td1 {color:#ffffff;width:5%;}
+#event .box_td2 {color:#ffffff;width:35%;}
+#event .box_td3 {color:#ffffff;width:5%;}
+#event .box_td4 {color:#ffffff;width:20%;}
+#event .box_td5 {color:#ffffff;width:15%;}
+#event .box_td6	{color:#ffffff;width:70%;}
+#event .box_td7 {color:#ffffff;width:30%;}
+
+#event .box_accommodation {background-color: rgba(37,48,101,0.5); color: #ffffff; padding: 5px 10px; text-align: center; font-size:12px}
+
+
+/* event application module */
+#event .rail {margin-top:15px; font-size: 16px;}
+#event .rail a {text-decoration:none; padding: 12px 15px;}
+#event .rail a:hover {text-decoration:none;}
+
+#event .rail .rail_1 {position:absolute; left:0px; width: 200px; height:40px; padding: 10px 40px; background-repeat:no-repeat; background-image:url('../Images/rail_1.png');}
+#event .rail .rail_1 a {color:rgb(50,50,50);}
+#event .rail .rail_1 a.selected, .rail_1 a:hover {color:rgb(255,255,255);}
+#event .rail .rail_1_clicked {position:absolute; left:0px; width: 200px; height:40px; padding: 10px 40px; background-repeat:no-repeat; background-image:url('../Images/rail_1_clicked.png');}
+#event .rail .rail_1_clicked a {color:rgb(255,255,255);}
+#event .rail .rail_1_clicked a.selected, .rail_1_clicked a:hover {color:rgb(255,255,255);}
+
+#event .rail .rail_2 {position:absolute; left:180px; width: 220px; height:40px; padding: 10px 60px; background-repeat:no-repeat; background-image:url('../Images/rail_2.png');}
+#event .rail .rail_2 a {color:rgb(50,50,50);}
+#event .rail .rail_2 a.selected, .rail_2 a:hover {color:rgb(255,255,255);}
+#event .rail .rail_2_clicked {position:absolute; left:180px; width: 220px; height:40px; padding: 10px 60px; background-repeat:no-repeat; background-image:url('../Images/rail_2_clicked.png');}
+#event .rail .rail_2_clicked a {color:rgb(255,255,255);}
+#event .rail .rail_2_clicked a.selected, .rail_2_clicked a:hover {color:rgb(255,255,255);}
+
+#event .rail .rail_3 {position:absolute; left:380px; width: 220px; height:40px; padding: 10px 60px; background-repeat:no-repeat; background-image:url('../Images/rail_3.png');}
+#event .rail .rail_3 a {color:rgb(50,50,50);}
+#event .rail .rail_3 a.selected, .rail_3 a:hover {color:rgb(255,255,255);}
+#event .rail .rail_3_clicked {position:absolute; left:380px; width: 220px; height:40px; padding: 10px 60px; background-repeat:no-repeat; background-image:url('../Images/rail_3_clicked.png');}
+#event .rail .rail_3_clicked a {color:rgb(255,255,255);}
+#event .rail .rail_3_clicked a.selected, .rail_3_clicked a:hover {color:rgb(255,255,255);}
+
+#event .rail .rail_4 {position:absolute; left:580px; width: 40px; height:40px; padding: 10px 60px; background-repeat:no-repeat; background-image:url('../Images/rail_4.png');}
+#event .rail .rail_4_short {position:absolute; left:360px; width: 40px; height:40px; padding: 10px 60px; background-repeat:no-repeat; background-image:url('../Images/rail_4.png');}
+
+#event .bubble {position:absolute; left:570px; top:120px;}
+#event .bubble_gum {border: 1px solid rgba(37,48,101,0.5); background-color:#FFFFFF; padding:10px; width:120px;}
+#event .bubble_extension {position:relative; left:118px;}
+#event .input_box {width:720px; border: 1px solid rgba(37,48,101,0.5); margin-top:70px; padding:0px 0px 10px 10px}
+#event .input_box .content {width:500px;}
+#event .input_box .motivation_form {padding-left:5px; padding-bottom:40px;}
+#event .input_box .motivation_text {border: 1px solid rgba(37,48,101,0.5);}
+#event .input_box .application_form {padding-left:5px; padding-bottom:40px;}
+#event .input_box .application_form  table{margin-top:15px}
+#event .input_box .td_square {padding-bottom:3px}
+#event .input_box .td_title {width:125px;}
+#event .input_box .td_warning {width:125px; color:rgb(255,0,0);}
+#event .input_box .td_title_bis {width:500px;}
+#event .input_box .td_form {width:800px;}
+#event .input_box .comments_text {border: 1px solid rgba(37,48,101,0.5);}
+#event .input_box .custom_text {border: 1px solid rgba(37,48,101,0.5);}
+/* old #event .boxing_button {width:250px; height:25px;} */
+#event .boxing_button {height:25px;}
+#event .button_default {float:left; margin-right:3px;}
+#event .box_big_td1 {color:rgba(37,48,101,0.5);width:3%;}
+#event .box_big_td2 {color:rgba(37,48,101,0.5);width:15%;}
+#event .box_big_td3 {color:rgba(37,48,101,0.5);width:3%;}
+#event .box_big_td4 {color:rgba(37,48,101,0.5);width:18%;}
+#event .box_big_td5 {color:rgba(37,48,101,0.5);width:15%;}
+#event .box_big_td6	{color:rgba(37,48,101,0.5);width:75%;}
+#event .box_big_td7 {color:rgba(37,48,101,0.5);width:25%;}
+#event .application_form .date_div {position:absolute; display:none; width:200px; height:200px; border: solid 1px; background-color:#FFFFFF;}
+/* event participants */
+#event .participants {width:700px;}
+#event .participants .td_1 {width:5%;}
+#event .participants .td_2 {width:30%;}
+#event .participants .td_3 {width:20%;}
+#event .participants .td_4 {width:15%;}
+#event .participants .td_5 {width:20%;}
+#event .participants .td_6 {width:5%;}
+#event .participants .td_7 {width:5%;}
+#event .participants .header td {color:rgb(37,48,101); border-bottom:none; height: 25px; background-color:rgba(37,48,101,0.5); text-align:center; padding-top:2px; padding-bottom:2px}
+#event .participants .center_this_fucka {text-align:center;}
+#event .participants td {padding:6px 10px; border-bottom: dotted 1px;}
+#event .participants a {text-decoration:none;}
+#event .participants a:hover {text-decoration:underline;}
+#event .participants img {cursor:pointer;}
+#event .participants .thumbnail {position:absolute; display:none; width: 100px; height:80px; overflow:hidden}
+#event .participants .thumbnail div {border: solid 1px rgb(200,200,200);}
+#event .participants .thumbnail img {border:solid 2px white;}
+#event .participants .participants_footer td {color:rgb(37,48,101); border-bottom:none; height: 25px; background-color:rgba(37,48,101,0.5); text-align:center; padding-top:2px; padding-bottom:2px}
+#event .participants .participants_footer img {cursor:default;}
+#event .participants .status_align {text-align:left;}
+#event .participants .status_align img {margin-bottom:-5px; cursor:pointer;}
+#event .participants .add_participant_td {border-bottom:none;}
+
+
+
+/* page seperator */
+.page_seperator {border-bottom: dotted 1px rgb(32,94,68); float:left; padding-bottom:7px;}
+.page_seperator_clear {clear:both;}
+.page_number_box_active {border-left: dotted 1px rgb(32,94,68); border-bottom: dotted 1px rgb(32,94,68); border-right: dotted 1px rgb(32,94,68); border-top: solid 1px white; width: 30px; background-color: white; position:relative; top:-2px; float:left; margin-left:1px; margin-right:1px; margin-bottom:2px;margin-top: 1px; padding-top:2px; text-align:center; color: rgb(32,94,68);}
+.page_number_box {border: solid 1px rgb(32,94,68); width: 30px; background-color: white; position:relative; float:left; margin-left:1px; margin-right:1px; margin-top:1px; text-align:center; color: rgb(32,94,68);}
+.page_boxes div {display:block;}
+.page_boxes a {text-decoration:none; color: rgb(32,94,68);}
+.page_boxes a:hover {text-decoration:none; color: rgb(32,94,68);}
