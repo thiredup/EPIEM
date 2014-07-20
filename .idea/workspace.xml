@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121f1d51-dcb3-43d8-9916-dc2492e09608" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.html" afterPath="$PROJECT_DIR$/event.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EPIEM.iws" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="328" column="2" selection-start="12496" selection-end="12496" vertical-scroll-proportion="0.8016807" vertical-offset="4443" max-vertical-offset="5040">
+            <state line="188" column="91" selection-start="6222" selection-end="6222" vertical-scroll-proportion="0.47394958" vertical-offset="2538" max-vertical-offset="5070">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -221,7 +222,11 @@
       <created>1405857967403</created>
       <updated>1405857967403</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added Videos to Conference&#10;">
+      <created>1405858377476</created>
+      <updated>1405858377476</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -287,7 +292,8 @@
     <MESSAGE value="git testing purposes&#10;" />
     <MESSAGE value="Update Cambridge &amp; Helsinki '10" />
     <MESSAGE value="Added Videos to Conference" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Videos to Conference" />
+    <MESSAGE value="Added Videos to Conference&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Videos to Conference&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -358,7 +364,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="328" column="2" selection-start="12496" selection-end="12496" vertical-scroll-proportion="0.8016807" vertical-offset="4443" max-vertical-offset="5040">
+        <state line="188" column="91" selection-start="6222" selection-end="6222" vertical-scroll-proportion="0.47394958" vertical-offset="2538" max-vertical-offset="5070">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
