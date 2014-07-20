@@ -29,7 +29,7 @@
       <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="0" selection-start="6423" selection-end="6423" vertical-scroll-proportion="0.6" vertical-offset="2523" max-vertical-offset="5100">
+            <state line="122" column="0" selection-start="3616" selection-end="3616" vertical-scroll-proportion="0.6302521" vertical-offset="1455" max-vertical-offset="4590">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -253,7 +253,11 @@
       <created>1405858754382</created>
       <updated>1405858754382</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="moved text on events">
+      <created>1405858914638</created>
+      <updated>1405858914638</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -322,7 +326,8 @@
     <MESSAGE value="Added Videos to Conference&#10;" />
     <MESSAGE value="Changed Video ratio" />
     <MESSAGE value="Teaser text updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teaser text updated" />
+    <MESSAGE value="moved text on events" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved text on events" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -402,7 +407,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="0" selection-start="6423" selection-end="6423" vertical-scroll-proportion="0.6" vertical-offset="2523" max-vertical-offset="5100">
+        <state line="122" column="0" selection-start="3616" selection-end="3616" vertical-scroll-proportion="0.6302521" vertical-offset="1455" max-vertical-offset="4590">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
