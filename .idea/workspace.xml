@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="121f1d51-dcb3-43d8-9916-dc2492e09608" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/event.html" afterPath="$PROJECT_DIR$/event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="EPIEM.iws" />
@@ -26,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="event.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="91" selection-start="6222" selection-end="6222" vertical-scroll-proportion="0.47394958" vertical-offset="2538" max-vertical-offset="5070">
+            <state line="188" column="91" selection-start="6222" selection-end="6222" vertical-scroll-proportion="-11.75" vertical-offset="2538" max-vertical-offset="5070">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -41,6 +42,24 @@
                 <element signature="n#style#0;n#p#0;n#span#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="48" selection-start="1451" selection-end="1594" vertical-scroll-proportion="0.42016807" vertical-offset="560" max-vertical-offset="2385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="0" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-17.5" vertical-offset="435" max-vertical-offset="2700">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,7 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Styles/Frame.css" />
         <option value="$PROJECT_DIR$/index - Copy.html" />
         <option value="$PROJECT_DIR$/accommodation.html" />
@@ -66,6 +84,8 @@
         <option value="$PROJECT_DIR$/cambridge10.html" />
         <option value="$PROJECT_DIR$/helsinki10.html" />
         <option value="$PROJECT_DIR$/event.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/about.html" />
       </list>
     </option>
   </component>
@@ -226,7 +246,11 @@
       <created>1405858377476</created>
       <updated>1405858377476</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changed Video ratio">
+      <created>1405858649943</created>
+      <updated>1405858649943</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -293,7 +317,8 @@
     <MESSAGE value="Update Cambridge &amp; Helsinki '10" />
     <MESSAGE value="Added Videos to Conference" />
     <MESSAGE value="Added Videos to Conference&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Videos to Conference&#10;" />
+    <MESSAGE value="Changed Video ratio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed Video ratio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -317,11 +342,6 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="10" selection-start="2247" selection-end="2247" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1200" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="21" selection-start="1592" selection-end="1592" vertical-scroll-proportion="0.6208054" vertical-offset="0" max-vertical-offset="7515" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Styles/Frame.css">
@@ -364,7 +384,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="91" selection-start="6222" selection-end="6222" vertical-scroll-proportion="0.47394958" vertical-offset="2538" max-vertical-offset="5070">
+        <state line="188" column="91" selection-start="6222" selection-end="6222" vertical-scroll-proportion="-11.75" vertical-offset="2538" max-vertical-offset="5070">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#li#0;n#ol#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -376,6 +396,20 @@
             <element signature="n#style#0;n#p#0;n#span#0;n#a#0;n#li#4;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="0" selection-start="1602" selection-end="1602" vertical-scroll-proportion="-17.5" vertical-offset="435" max-vertical-offset="2700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="48" selection-start="1451" selection-end="1594" vertical-scroll-proportion="0.42016807" vertical-offset="560" max-vertical-offset="2385">
+          <folding />
         </state>
       </provider>
     </entry>
